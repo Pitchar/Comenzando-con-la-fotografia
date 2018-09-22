@@ -5,13 +5,13 @@ header{
   height: 120px;
 }
 h1{
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Dancing Script', cursive;
   font-size: 2em;
   color: white;
   text-shadow:1px 2px 2px #02010a;
 }
 header nav{
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Dancing Script', cursive;
   height: 90%;
   float: right;
   padding: 0.5% 2% 0 0;
@@ -21,4 +21,14 @@ a{
   font-size: 2em;
   color: white;
   text-shadow:1px 2px 2px #02010a;
+}
+
+body{
+  background-color: #02010a;
+  margin: 20px;
+  font-family: Raleway;
+}
+
+.contenido{
+
 }
