@@ -3,6 +3,7 @@ header{
   background-color: #5b7989;
   width: 100%;
   height: 120px;
+  border-radius: 10px 10px 0px 0px;
 }
 h1{
   font-family: 'Dancing Script', cursive;
@@ -26,9 +27,59 @@ a{
 body{
   background-color: #02010a;
   margin: 20px;
-  font-family: Raleway;
+  font-family: raleway;
 }
 
-.contenido{
+#contenido{
+  min-height: 900px;
+  margin:0px;
+  padding:0px;
+  display: flex;
+  flex-direction: column;
+}
+
+.contenedor{
+  background-color: #82c3a6;
+  width: 100%;
+  height: 300px;
+  padding: 10px;
+  margin: 10px;
+  flex-direction: row;
 
 }
+
+ #casa{
+ height:80%;
+ margin-left: auto;
+ margin-right: auto;
+ padding: 0.5% 2% 0 0;
+}
+
+.contenedor2{
+  display: flex;
+  flex-direction: column;
+}
+
+.contenedor2{
+  background-color:#d5c75f;
+  width: 100%;
+  height: 300px;
+  padding: 10px;
+  margin: 10px;
+  flex-direction: row;
+}
+
+.paisaje{
+  order: 1;
+  flex-grow: 1
+}
+
+.retrato{
+  order: 2;
+  flex-grow: 1
+}
+footer{
+  clear: both;
+  height: 100px;
+  width: 100%;
+  background-color:
