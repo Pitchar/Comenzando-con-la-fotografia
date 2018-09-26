@@ -30,18 +30,23 @@ body{
   font-family: raleway;
 }
 
-#contenido{
-  min-height: 900px;
-  margin:0px;
-  padding:0px;
-  display: flex;
-  flex-direction: column;
+.contenido{
+margin: 0 auto;
+width: 900px;
+display: flex;
+flex-direction: column;
+}
+
+.contenedor div{
+	box-sizing: border-box;
+	min-height: 600px;
+	min-width: 100px;
 }
 
 .contenedor{
   background-color: #82c3a6;
   width: 100%;
-  height: 300px;
+  height: 500px;
   padding: 10px;
   margin: 10px;
   flex-direction: row;
@@ -49,7 +54,7 @@ body{
 }
 
  #casa{
- height:80%;
+ width: 100%;
  margin-left: auto;
  margin-right: auto;
  padding: 0.5% 2% 0 0;
@@ -63,23 +68,31 @@ body{
 .contenedor2{
   background-color:#d5c75f;
   width: 100%;
-  height: 300px;
+  height: 500px;
   padding: 10px;
   margin: 10px;
-  flex-direction: row;
 }
 
-.paisaje{
+#paisaje{
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0.5% 2% 0 0;
   order: 1;
-  flex-grow: 1
+
 }
 
-.retrato{
+#retrato{
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0.5% 2% 0 0;
   order: 2;
-  flex-grow: 1
 }
+
 footer{
-  clear: both;
-  height: 100px;
-  width: 100%;
-  background-color:
+  margin-top: 100%;
+  padding-top: 120px;
+  background-color:#C6d5c5;
+  border-radius: 0px 0px 10px 10px;
+  }
