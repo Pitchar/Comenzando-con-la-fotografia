@@ -41,6 +41,7 @@ flex-flow: wrap;
 .contenedor div{
 	box-sizing: border-box;
 
+
   }
 
 .contenedor{
@@ -48,17 +49,15 @@ flex-flow: wrap;
   padding: 50px;
   margin: 10px;
   flex-direction: row;
-  width: 100%;
   height: auto;
 
 }
 
  #casa{
- width: 100%;
  margin-left: auto;
  margin-right: auto;
  padding: 0.5% 2% 0 0;
- height: 100%;
+
 }
 
 .contenedor2 img{
@@ -70,10 +69,11 @@ flex-flow: wrap;
 
 .contenedor2{
   background-color:#d5c75f;
-  padding: 10px;
+  width: 100%;
+  padding: 50px;
   margin: 10px;
   flex-direction: row;
-  width: 100%
+  height: auto;
 }
 
 #paisaje{
@@ -82,7 +82,7 @@ flex-flow: wrap;
   margin-right: auto;
   padding: 0.5% 2% 0 0;
   float: left;
-  height: 100%;
+
 
 }
 
@@ -92,21 +92,28 @@ flex-flow: wrap;
   margin-right: auto;
   padding: 0.5% 2% 0 0;
   float: right;
-  height: 100%;
-
-
-
 }
 
 footer{
-  margin-top: 100%;
-  padding-top: 120px;
   background-color:#C6d5c5;
   border-radius: 0px 0px 10px 10px;
   }
+  .contenedor3 {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+  }
 
-  p{
-	  text-align: center;
+  .contenedor3 div {
+  box-sizing: border-box;
+  min-height: 600px;
+  min-width: 100px;
+  }
+
+  p {
   	margin-top: 8em;
+
 
   }
