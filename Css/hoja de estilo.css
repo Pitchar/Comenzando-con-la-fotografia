@@ -28,6 +28,8 @@ body{
   background-color: #02010a;
   font-size: 16px;
 	font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
 }
 
 .contenido{
@@ -74,103 +76,101 @@ flex-flow: wrap;
   padding:50px;
   margin:0px;
   border:1px solid black ;
-  height: auto;
-	flex-direction: row;
+  height:auto;
+  display: flex;
+  flex-flow: row wrap;
 }
 
 
-
-#paisaje{
+div.retrato{
   width: 50%;
   margin-left: auto;
   margin-right: auto;
   padding: 0.5% 2% 0 0;
-  float: left;
 
 
 }
+div.paisaje{
+ width: 50%;
+ margin-left: auto;
+ margin-right: auto;
+ padding: 0.5% 2% 0 0;
 
-#retrato{
-  width: 50%;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 0.5% 2% 0 0;
-  float: right;
+
+ }
+
+ footer{
+   width: 100%;
+   background-color:#C6d5c5;
+   border-radius: 0px 0px 10px 10px;
+   font-family: 'Dancing Script', cursive;
+   }
+.contenedor3{
+  display: flex;
+  flex-flow: row wrap;
 }
 
-footer{
-  background-color:#C6d5c5;
-  border-radius: 0px 0px 10px 10px;
-  font-family: 'Dancing Script', cursive;
-
-  }
-  .contenedor3 {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    display: flex;
-    flex-flow: row wrap;
-  }
-
-
-  .contenedor3 div {
+.contenedor3 div{
   box-sizing: border-box;
-  min-height: 600px;
-  min-width: 100px;
-  padding: 5px;
-  border: 10px;
-  margin: 5px;
-  }
-
-.c1 {
-   width: 25%
-   font-size: 2em;}
-
-.c2 {
-  width: 25%
-  font-size: 2em;
 }
 
-.c3{
-  width: 25%
-  font-size: 2em;
-}
-
-.c4{
-  width: 25%
-  font-size: 2em;
-}
-
-@media all and (max-width: 500px) {
-	.c1 {
-    		width: 100%;
-  }
-
-
-	 .c2 {
-		width: 100%;
-
-	}
-	.c3 {
-		width: 100%;
-
-	}
-  .c4 {
-    width: 100%
-  }
-}
-
-@media all and (max-width: 800px) and (min-width: 500px) {
-	.c1 {
-		width: 25%;
-	}
-	.c2 {
-		width: 25%;
-	}
-	.c3 {
-		width: 25%;
-	}
-  .c4 {
+ .c1 {
     width: 25%;
-  }
-}
+    order:1;
+    }
+
+ .c2 {
+   width: 25%;
+   order: 2;
+
+ }
+
+ .c3{
+   width: 25%;
+   order:3;
+
+ }
+
+ .c4{
+   width: 25%;
+   order: 4;
+
+ }
+
+ @media all and (max-width: 500px) {
+ 	.c1 {
+     		width: 100%;
+        order: 1;
+   }
+
+
+ 	 .c2 {
+ 		width: 100%;
+    order: 2;
+
+ 	}
+ 	.c3 {
+ 		width: 100%;
+    order: 3;
+
+ 	}
+   .c4 {
+     width: 100%;
+     order: 4;
+   }
+ }
+
+ @media all and (max-width: 800px) and (min-width: 500px) {
+ 	.c1 {
+ 		width: 25%;
+ 	}
+ 	.c2 {
+ 		width: 25%;
+ 	}
+ 	.c3 {
+ 		width: 25%;
+ 	}
+   .c4 {
+     width: 25%;
+   }
+ }
