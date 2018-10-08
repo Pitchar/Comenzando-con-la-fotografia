@@ -26,8 +26,6 @@ a{
 
 body{
   background-color: #02010a;
-  font-size: 16px;
-	font-family: sans-serif;
   display: flex;
   flex-direction: column;
 }
@@ -66,12 +64,11 @@ flex-flow: wrap;
 
 .contenedor2 img{
   box-sizing: border-box;
-  display: inline-block;
-  flex-direction: column;
-
+  padding: 25px;
 }
 
 .contenedor2{
+  width: 100%;
   background-color:#d5c75f;
   padding:50px;
   margin:0px;
@@ -82,21 +79,29 @@ flex-flow: wrap;
 }
 
 
-div.retrato{
-  width: 50%;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 0.5% 2% 0 0;
-
-
-}
 div.paisaje{
+  width: 50%;
+  box-shadow: 2px #82c3a6;
+}
+
+
+#paisaje img:hover{
+
+  box-shadow: 2px #82c3a6;
+}
+
+
+div.retrato{
  width: 50%;
- margin-left: auto;
- margin-right: auto;
- padding: 0.5% 2% 0 0;
+ }
 
-
+ #retrato img:hover{
+   animation-name: retrato-animacion;
+ animation-duration: 2s;
+ -webkit-animation-delay: 3s;
+ -moz-animation-delay: 3s;
+ -o-animation-delay: 3s;
+ animation-delay: 3s;
  }
 
  footer{
