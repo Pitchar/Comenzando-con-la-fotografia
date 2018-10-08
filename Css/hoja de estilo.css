@@ -81,13 +81,14 @@ flex-flow: wrap;
 
 div.paisaje{
   width: 50%;
-  box-shadow: 2px #82c3a6;
 }
 
 
 #paisaje img:hover{
-
-  box-shadow: 2px #82c3a6;
+  -webkit-transform:rotate(10deg);
+  transform: rotate(10deg);
+  -webkit-box-shadow:2px 2px 2px 2px #82c3a6;
+  box-shadow: 2px 2px 2px 2px #82c3a6;
 }
 
 
@@ -96,12 +97,14 @@ div.retrato{
  }
 
  #retrato img:hover{
+   -webkit-animation-name: retrato-animacion;
    animation-name: retrato-animacion;
- animation-duration: 2s;
- -webkit-animation-delay: 3s;
- -moz-animation-delay: 3s;
- -o-animation-delay: 3s;
- animation-delay: 3s;
+   -webkit-animation-duration: 1s;
+ animation-duration: 1s;
+ -webkit-animation-delay: 1s;
+ animation-delay: 1s;
+ -moz-animation-delay: 1s;
+ -o-animation-delay: 1s;
  }
 
  footer{
