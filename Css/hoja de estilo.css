@@ -27,7 +27,7 @@ a{
 body{
   background-color: #02010a;
   display: flex;
-  flex-direction: column;
+  flex-flow: wrap;
 }
 
 .contenido{
@@ -42,16 +42,18 @@ flex-flow: wrap;
 	box-sizing: border-box;
   display: flex;
 	flex-direction: row;
+  align-items: center;
 
 
   }
 
 .contenedor{
+  width: 100%;
   background-color: #82c3a6;
   padding: 50px;
   margin: 0px;
   flex-direction: row;
-  height: auto;
+
 
 }
 
@@ -64,7 +66,11 @@ flex-flow: wrap;
 
 .contenedor2 img{
   box-sizing: border-box;
-  padding: 25px;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  -webkit-box-shadow:2px #02010a;
+  box-shadow: 2px #02010a;
 }
 
 .contenedor2{
@@ -75,12 +81,7 @@ flex-flow: wrap;
   border:1px solid black ;
   height:auto;
   display: flex;
-  flex-flow: row wrap;
-}
-
-
-div.paisaje{
-  width: 50%;
+  flex-direction: row;
 }
 
 
@@ -92,9 +93,7 @@ div.paisaje{
 }
 
 
-div.retrato{
- width: 50%;
- }
+
 
  #retrato img:hover{
    -webkit-animation-name: retrato-animacion;
@@ -105,6 +104,9 @@ div.retrato{
  animation-delay: 1s;
  -moz-animation-delay: 1s;
  -o-animation-delay: 1s;
+ -webkit-box-shadow:2px 2px 2px 2px #82c3a6;
+ box-shadow: 2px 2px 2px 2px #82c3a6;
+
  }
 
  footer{
@@ -113,6 +115,7 @@ div.retrato{
    border-radius: 0px 0px 10px 10px;
    font-family: 'Dancing Script', cursive;
    }
+
 .contenedor3{
   display: flex;
   flex-flow: row wrap;
@@ -145,7 +148,21 @@ div.retrato{
 
  }
 
+
+
+
  @media all and (max-width: 500px) {
+
+.contenido{
+  display: flex;
+  flex-direction: column;
+}
+.contenedor3{
+  display: flex;
+  flex-direction: column;
+}
+
+}
  	.c1 {
      		width: 100%;
         order: 1;
@@ -155,8 +172,8 @@ div.retrato{
  	 .c2 {
  		width: 100%;
     order: 2;
+}
 
- 	}
  	.c3 {
  		width: 100%;
     order: 3;
@@ -166,10 +183,34 @@ div.retrato{
      width: 100%;
      order: 4;
    }
+
+   .contenedor2{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+   }
+   #casa{
+     width: 100%;
+   }
+     #paisaje{
+       width: 100%;
+       order: 1
+     }
+
+     #retrato{
+       width: 100%;
+       order: 2
+     }
+
  }
 
- @media all and (max-width: 800px) and (min-width: 500px) {
- 	.c1 {
+ @media all and (max-width: 900px) and (min-width: 500px) {
+}
+.contenedor2{
+  display: flex;
+  flex-direction: row;
+}
+  .c1 {
  		width: 25%;
  	}
  	.c2 {
