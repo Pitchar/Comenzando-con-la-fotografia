@@ -25,18 +25,12 @@ a{
 }
 
 body{
+  width: 900px;
   background-color: #02010a;
   display: flex;
   flex-flow: wrap;
 }
 
-.contenido{
-margin: 0;
-width: 900px;
-padding: 0;
-display: flex;
-flex-flow: wrap;
-}
 
 .contenedor img{
   box-sizing: border-box;
@@ -46,7 +40,6 @@ flex-flow: wrap;
 }
 
 .contenedor{
-  width: 100%;
   background-color:#d5c75f;
   margin:0px;
   border:1px solid black ;
@@ -145,10 +138,6 @@ footer{
 
 @media all and (max-width: 500px) {
 
-.contenido{
-  display: flex;
-  flex-direction: column;
-}
 
 .contenedor{
   display: flex;
