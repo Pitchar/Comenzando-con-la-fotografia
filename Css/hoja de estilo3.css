@@ -165,6 +165,13 @@ footer{
 
   }
 
+  .contenido{
+    width: 100%;
+    display: flex;
+    -webkit-flex-direction:column;
+    -moz-flex-direction:column;
+    flex-direction: column;
+  }
 
 
 .contenedor{
