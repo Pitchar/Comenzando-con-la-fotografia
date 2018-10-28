@@ -36,7 +36,10 @@ body{
   flex-flow: wrap;
 }
 
-.contenedor img{
+
+
+
+.contenedor div{
   box-sizing: border-box;
   padding: 10px;
   flex-direction: row;
@@ -51,6 +54,11 @@ body{
   height:auto;
   display: flex;
   flex-flow:row wrap;
+}
+
+img{
+  -webkit-box-shadow:2px 2px #02010a;
+  box-shadow: 2px 2px #02010a;
 }
 
 
@@ -69,11 +77,8 @@ body{
   order: 3;
 }
 
-img{
-  -webkit-box-shadow:2px 2px #02010a;
-  box-shadow: 2px 2px #02010a;
 
-}
+
 
 #img1{
   -webkit-filter:blur(10px);

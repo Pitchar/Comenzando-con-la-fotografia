@@ -53,25 +53,17 @@ body{
   margin: 0px;
   flex-direction: row;
 
-
 }
 
  #casa{
  margin-left: auto;
  margin-right: auto;
- padding: 0.5% 2% 0 0;
- -webkit-box-shadow:2px 2px #02010a;
- box-shadow: 2px 2px #02010a;
-
-
 }
 
 .contenedor2 div{
   box-sizing: border-box;
   padding: 10px;
   width: 50%;
-  -webkit-box-shadow:2px 2px 2px #02010a;
-  box-shadow: 2px 2px 2px #02010a;
 }
 
 .contenedor2{
@@ -84,6 +76,11 @@ body{
   flex-direction: row;
 }
 
+
+img{
+  -webkit-box-shadow:2px 2px #02010a;
+  box-shadow: 2px 2px #02010a;
+}
 
 #paisaje img:hover{
   -webkit-transform:rotate(10deg);
